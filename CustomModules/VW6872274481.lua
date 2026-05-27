@@ -8089,7 +8089,7 @@ end)--]]
 		'vapevoidware.xyz',
 		'voidware is just better',
 		'voidware > render',
-		'discord.gg/atomware',
+		'discord.gg/voidware',
 		'pro'
 	}
 	local indicatorFunction = function(self, instance, ...)

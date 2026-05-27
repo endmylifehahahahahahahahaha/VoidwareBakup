@@ -1,4 +1,4 @@
-﻿if shared.VapeExecuted then
+if shared.VapeExecuted then
 	local VERSION = "4.10"..(shared.VapePrivate and " PRIVATE" or "").." "..readfile("vape/commithash.txt"):sub(1, 6)
 	local baseDirectory = (shared.VapePrivate and "vapeprivate/" or "vape/")
 	local profilesDirectory = (shared.ClosetCheatMode and "ClosetProfiles/" or "Profiles/")
@@ -910,7 +910,7 @@
 					if S_Name ~= "Not Specified" then
 						if attemptedRestarts[S_Name] then 
 							errorNotification('Voidware | '..tostring(S_Name), "Restart failed!", 3)
-							errorNotification("Voidware | "..tostring(S_Name), "There was an error with this module. If you can please send the\n VW_Error_Log.json in your workspace to erchodev#0 or discord.gg/atomware", 10)
+							errorNotification("Voidware | "..tostring(S_Name), "There was an error with this module. If you can please send the\n VW_Error_Log.json in your workspace to erchodev#0 or discord.gg/voidware", 10)
 						else
 							if shared.VoidDev then
 								errorNotification('Voidware | '..tostring(S_Name), "There was an error with this module. Attempting restart...", 3)
@@ -920,7 +920,7 @@
 							if suc2 then InfoNotification("Voidware | "..tostring(S_Name), "Restart successfull!", 3); end
 						end
 					else
-						errorNotification("Voidware | "..tostring(S_Name), "There was an error with this module. If you can please send the\n VW_Error_Log.json in your workspace to erchodev#0 or discord.gg/atomware", 10)
+						errorNotification("Voidware | "..tostring(S_Name), "There was an error with this module. If you can please send the\n VW_Error_Log.json in your workspace to erchodev#0 or discord.gg/voidware", 10)
 					end
 				end)
 				local errorLog = {

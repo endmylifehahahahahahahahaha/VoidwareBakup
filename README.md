@@ -1,2 +1,2 @@
 Pro script
-discord.gg/atomware
+discord.gg/voidware

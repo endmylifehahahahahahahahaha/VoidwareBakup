@@ -1,4 +1,4 @@
-﻿local VWFunctions = {}
+local VWFunctions = {}
 VWFunctions.Connections = {}
 
 VWFunctions.GlobalisedObjects = {}

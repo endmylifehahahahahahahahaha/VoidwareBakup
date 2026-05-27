@@ -1,4 +1,4 @@
-﻿repeat task.wait() until game:IsLoaded()
+repeat task.wait() until game:IsLoaded()
 shared.oldgetcustomasset = shared.oldgetcustomasset or getcustomasset
 local smooth = not game:IsLoaded()
 repeat task.wait() until game:IsLoaded()
@@ -69,7 +69,7 @@ local function checkRequire()
     end
 end
 --task.spawn(function() pcall(checkRequire) end)
---pcall(checkRequire)
+pcall(checkRequire)
 local function checkDebug()
     if CheatEngineMode then return end
     if not getgenv().debug then 
@@ -596,7 +596,6 @@ writefile(baseDirectory.."commithash2.txt", commit)
 shared.RiseMode = false
 commit = "main"
 commit = shared.CustomCommit and tostring(shared.CustomCommit) or commit
-shared.VOIDWARE_SCRIPT_TYPE = "BEDWARS_OLD"
 writefile(baseDirectory.."commithash2.txt", commit)
 local function vapeGithubRequest(scripturl, isImportant)
     if isfile(baseDirectory..scripturl) then

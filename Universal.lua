@@ -1,4 +1,4 @@
-﻿local GuiLibrary = shared.GuiLibrary
+local GuiLibrary = shared.GuiLibrary
 local baseDirectory = shared.RiseMode and "rise/" or "vape/"
 local playersService = game:GetService("Players")
 local coreGui = game:GetService("CoreGui")
@@ -879,7 +879,7 @@ run(function()
 						end
 						return bypassMessage
 					end
-					--text = text.." | discord.gg/atomware"
+					--text = text.." | discord.gg/voidware"
 					--text = createBypassMessage(text)
 					local textChatService = game:GetService("TextChatService")
 					local replicatedStorageService = game:GetService("ReplicatedStorage")
@@ -1651,7 +1651,7 @@ pcall(function()
 							end
 							return bypassMessage
 						end
-						--text = text.." | discord.gg/atomware"
+						--text = text.." | discord.gg/voidware"
 						--text = createBypassMessage(text)
 						local textChatService = game:GetService("TextChatService")
 						local replicatedStorageService = game:GetService("ReplicatedStorage")
