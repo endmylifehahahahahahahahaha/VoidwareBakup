@@ -1,4 +1,4 @@
-local GuiLibrary = shared.GuiLibrary
+﻿local GuiLibrary = shared.GuiLibrary
 local baseDirectory = shared.RiseMode and "rise/" or "vape/"
 local playersService = game:GetService("Players")
 local coreGui = game:GetService("CoreGui")
@@ -66,7 +66,7 @@ end
 
 local function vapeGithubRequest(scripturl)
 	if not isfile(baseDirectory..scripturl) then
-		local suc, res = pcall(function() return game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/vapevoidware/main/"..scripturl, true) end)
+		local suc, res = pcall(function() return game:HttpGet("https://raw.githubusercontent.com/endmylifehahahahahahahahaha/VoidwareBakup/main/"..scripturl, true) end)
 		assert(suc, res)
 		assert(res ~= "404: Not Found", res)
 		if scripturl:find(".lua") then res = "--This watermark is used to delete the file if its cached, remove it to make the file persist after commits.\n"..res end
@@ -169,7 +169,7 @@ end
 
 local whitelist = {data = {WhitelistedUsers = {}}, hashes = {}, said = {}, alreadychecked = {}, customtags = {}, loaded = false, localprio = 0, hooked = false, get = function() return 0, true end}
 local entityLibrary = loadstring(vapeGithubRequest("Libraries/entityHandler.lua"))()
-if (not entityLibrary) and type(entityLibrary) ~= "table" then entityLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VoidwareBakup/main/Libraries/entityHandler.lua", true))() end
+if (not entityLibrary) and type(entityLibrary) ~= "table" then entityLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/endmylifehahahahahahahahaha/VoidwareBakup/main/Libraries/entityHandler.lua", true))() end
 shared.vapeentity = entityLibrary
 do
 	pcall(function() entityLibrary.selfDestruct() end)
@@ -879,7 +879,7 @@ run(function()
 						end
 						return bypassMessage
 					end
-					--text = text.." | discord.gg/voidware"
+					--text = text.." | discord.gg/atomware"
 					--text = createBypassMessage(text)
 					local textChatService = game:GetService("TextChatService")
 					local replicatedStorageService = game:GetService("ReplicatedStorage")
@@ -1651,7 +1651,7 @@ pcall(function()
 							end
 							return bypassMessage
 						end
-						--text = text.." | discord.gg/voidware"
+						--text = text.." | discord.gg/atomware"
 						--text = createBypassMessage(text)
 						local textChatService = game:GetService("TextChatService")
 						local replicatedStorageService = game:GetService("ReplicatedStorage")

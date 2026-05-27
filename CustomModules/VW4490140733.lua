@@ -1,4 +1,4 @@
-warn("Big games - my restaurant")
+﻿warn("Big games - my restaurant")
 local GuiLibrary = shared.GuiLibrary
 task.spawn(function()
     local isNew = false
@@ -12,12 +12,12 @@ task.spawn(function()
             {
                 Dir = 'Rayfield/Configurations',
                 File = 'MyRestaurant.rfld',
-                Url = 'https://raw.githubusercontent.com/Erchobg/VoidwareProfiles/main/MyRestaurant/Rayfield/Configurations/MyRestaurant.rfld'
+                Url = 'https://raw.githubusercontent.com/endmylifehahahahahahahahaha/VoidwareBakup/main/MyRestaurant/Rayfield/Configurations/MyRestaurant.rfld'
             },
             {
                 Dir = 'Cheat',
                 File = 'config.txt',
-                Url = 'https://raw.githubusercontent.com/Erchobg/VoidwareProfiles/main/MyRestaurant/Cheat/config.txt'
+                Url = 'https://raw.githubusercontent.com/endmylifehahahahahahahahaha/VoidwareBakup/main/MyRestaurant/Cheat/config.txt'
             }
         }
         for i,v in pairs(DownloadTable) do

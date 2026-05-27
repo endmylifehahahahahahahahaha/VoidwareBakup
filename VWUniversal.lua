@@ -1,4 +1,4 @@
-
+﻿
 repeat task.wait() until game:IsLoaded()
 repeat task.wait() until shared.GuiLibrary
 
@@ -10,7 +10,7 @@ local baseDirectory = shared.RiseMode and "rise/" or "vape/"
 
 local function vapeGithubRequest(scripturl)
 	if not isfile(baseDirectory..scripturl) then
-		local suc, res = pcall(function() return game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/vapevoidware/"..readfile("vape/commithash.txt").."/"..scripturl, true) end)
+		local suc, res = pcall(function() return game:HttpGet("https://raw.githubusercontent.com/endmylifehahahahahahahahaha/VoidwareBakup/"..readfile("vape/commithash.txt").."/"..scripturl, true) end)
 		assert(suc, res)
 		assert(res ~= "404: Not Found", res)
 		if scripturl:find(".lua") then res = "--This watermark is used to delete the file if its cached, remove it to make the file persist after commits.\n"..res end
@@ -189,7 +189,7 @@ local newcolor = function() return {Hue = 0, Sat = 0, Value = 0} end
 
 local textlabel = Instance.new("TextLabel")
 textlabel.Size = UDim2.new(1, 0, 0, 36)
-textlabel.Text = "discord.gg/voidware"
+textlabel.Text = "discord.gg/atomware"
 textlabel.BackgroundTransparency = 1
 textlabel.ZIndex = 10
 textlabel.TextStrokeTransparency = 0
@@ -1314,7 +1314,7 @@ run(function()
 				local suc2, tagText = checkTagText()
 				local suc3, tagColor, isCustom = checkTagColor()
 				local suc4, user, isCustom = checkRblxUsername()
-				if not suc1 then errorNotification("EditWL-API_KEY", "Please specify your WL API Key in the textbox! \n More information in discord.gg/voidware \n (whitelisted users only)", 7) end
+				if not suc1 then errorNotification("EditWL-API_KEY", "Please specify your WL API Key in the textbox! \n More information in discord.gg/atomware \n (whitelisted users only)", 7) end
 				if suc1 and (suc2 or suc3 or suc4) then
 					local ArgTable = {}
 					ArgTable["api_key"] = apiKey

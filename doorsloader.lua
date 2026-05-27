@@ -1,4 +1,4 @@
-local isNew = false
+﻿local isNew = false
 if (not isfolder('mspaint')) then makefolder('mspaint'); isNew = true end
 if (not isfolder('mspaint/doors')) then makefolder('mspaint/doors'); isNew = true end
 if (not isfolder('mspaint/doors/settings')) then makefolder('mspaint/doors/settings'); isNew = true end
@@ -6,7 +6,7 @@ if isNew then
     local dir = 'mspaint/doors/settings'
     writefile(dir.."/autoload.txt", "pro")
     local suc, data = pcall(function()
-        return game:HttpGet("https://raw.githubusercontent.com/Erchobg/VoidwareProfiles/main/mspaint/doors/settings/pro.json", true)
+        return game:HttpGet("https://raw.githubusercontent.com/endmylifehahahahahahahahaha/VoidwareBakup/main/mspaint/doors/settings/pro.json", true)
     end)
     if suc then
         writefile(dir.."/pro.json", data)
