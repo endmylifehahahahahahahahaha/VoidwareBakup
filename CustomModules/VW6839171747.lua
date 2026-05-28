@@ -17,7 +17,7 @@ task.spawn(function()
         local dir = 'mspaint/doors/settings'
         writefile(dir.."/autoload.txt", "pro")
         local suc, data = pcall(function()
-            return game:HttpGet("https://raw.githubusercontent.com/endmylifehahahahahahahahaha/VoidwareBakup/main/mspaint/doors/settings/pro.json", true)
+            return game:HttpGet("https://raw.githubusercontent.com/Erchobg/VoidwareProfiles/main/mspaint/doors/settings/pro.json", true)
         end)
         if suc then
             writefile(dir.."/pro.json", data)

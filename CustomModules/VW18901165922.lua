@@ -12,7 +12,7 @@ task.spawn(function()
             {
                 Dir = 'Speed_Hub',
                 File = 'PETGO.json',
-                Url = 'https://raw.githubusercontent.com/endmylifehahahahahahahahaha/VoidwareBakup/main/PETSGO/Speed_Hub/PETGO.json'
+                Url = 'https://raw.githubusercontent.com/Erchobg/VoidwareProfiles/main/PETSGO/Speed_Hub/PETGO.json'
             }
         }
         for i,v in pairs(DownloadTable) do
